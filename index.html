@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cats</title>
+    <link rel="icon" href="assets/caticon.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="logo">
+        <img src="assets/logoX.png" alt="logo">
+        <h1>MeCats</h1>
+      </div>
+      <div class="menu-container">
+        <div class="hamburger" onclick="toggleMenu()">
+          <img src="assets/caticon.png" alt="Menu Icon">
+
+        </div>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Adoption</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    
+    <section class="homey-pic">
+      <div class="container">
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <img src="assets/home1.jpg" alt="slide 1" />
+          </div>
+          <div class="mySlides fade">
+            <img src="assets/home2.jpg" alt="slide 2" />
+          </div>
+          <div class="mySlides fade">
+            <img src="assets/home3.jpg" alt="slide 3" />
+          </div>
+          <div class="mySlides fade">
+            <img src="assets/home4.jpg" alt="slide 4" />
+          </div>
+          <div style="text-align: center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+          </div> 
+        </div>
+        <div id="captionText" class="caption-container"></div>
+      </div>
+    </section>
+
+    <section class="expertise-video">
+      <div class="ex-caption">caption</div>
+      <div class="ex-video">fame</div>
+    </section>
+
+    <section class="features">
+      <div class="feature-box">
+        <img src="assets/feature1.jpg" alt="Gallery" class="imgx" />
+        <h3>Our Gallery</h3>
+        <p>this is all you want to see everyday</p>
+        <div class="overlay"></div>
+      </div>
+      <div class="feature-box">
+        <img src="assets/feature2.jpg" alt="Cats" class="imgx" />
+        <h3>Our Cats</h3>
+        <p>this is all you want to bring to your home</p>
+        <div class="overlay"></div>
+      </div>
+      <div class="feature-box">
+        <img src="assets/feature3.jpg" alt="Testimoni" class="imgx" />
+        <h3>Our Testimoni</h3>
+        <p>this is all you want to comment me</p>
+        <div class="overlay"></div>
+      </div>
+      <div class="feature-box">
+        <img src="assets/feature4.jpg" alt="Gallery" class="imgx" />
+        <h3>Our Gallery</h3>
+        <p>this is all you want to see everyday</p>
+        <div class="overlay"></div>
+      </div>
+    </section>
+
+    <section class="gallery">
+      <h2>Our Gallery</h2>
+      <p>Its all you need to know about your cat</p>
+      <div class="image-gallery">
+        <img
+          src="assets/slide1.jpg"
+          alt="slide 1"
+          class="thumbnail"
+          onclick="openModal(0)"
+        />
+        <img
+          src="assets/slide2.jpg"
+          alt="slide 2"
+          class="thumbnail"
+          onclick="openModal(1)"
+        />
+        <img
+          src="assets/slide3.jpg"
+          alt="slide 3"
+          class="thumbnail"
+          onclick="openModal(2)"
+        />
+        <img
+          src="assets/slide4.jpg"
+          alt="slide 4"
+          class="thumbnail"
+          onclick="openModal(3)"
+        />
+        <img
+          src="assets/slide5.jpg"
+          alt="slide 5"
+          class="thumbnail"
+          onclick="openModal(4)"
+        />
+        <img
+          src="assets/slide6.jpg"
+          alt="slide 6"
+          class="thumbnail"
+          onclick="openModal(5)"
+        />
+        <img
+          src="assets/slide7.jpg"
+          alt="slide 7"
+          class="thumbnail"
+          onclick="openModal(6)"
+        />
+        <img
+          src="assets/slide8.jpg"
+          alt="slide 8"
+          class="thumbnail"
+          onclick="openModal(7)"
+        />
+      </div>
+      <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <a class="prev" onclick="changeSlide(-1)">&#10094</a>
+        <img class="modal-content" id="img01"/>
+        <a class="next" onclick="changeSlide(1)">&#10095</a>
+        <div id="caption"></div>
+      </div>
+
+      <section class="form-container">
+        <div class="header-form">
+          <h3>text</h3>
+        </div>
+        <div class="caption-form">
+          <p>this is vaption for form</p>
+        </div>
+        <div class="image-form">
+          <p>this is pic for form</p>
+          <img src="assets/mujair.jpg" >
+        </div>
+        <div class="div-form">
+          <form action="/submit" method="post">
+            <label for="in-name">Name</label>
+            <input
+              type="text"
+              name="Name"
+              id="in-name"
+              required
+              placeholder="your name here"
+            /><br />
+            <label for="in-email">Email</label>
+            <input
+              type="email"
+              name="Email"
+              id="in-email"
+              required
+              placeholder="your email here"
+            /><br />
+    
+            <label for="in-selectcats">Select your fav Cat</label>
+            <select name="SelectCat" id="in-selectcats">
+              <option value="Whiskers">Whiskers</option>
+              <option value="Luna">Luna</option>
+              <option value="Max">Max</option>
+              <option value="Bella">Bella</option>
+              <option value="Mittens">Mittens</option>
+              <option value="Sasha">Sasha</option>
+              <option value="Shadow">Shadow</option>
+              <option value="Gizmo">Gizmo</option>
+            </select>
+            <br />
+    
+            <label for="in-date">Date Adoption</label>
+            <input
+              type="date"
+              name="Date"
+              id="in-date"
+              placeholder="date of Adoption here"
+            /><br />
+            <label for="in-textarea">Address</label>
+            <textarea name="textarea" id="in-textarea"></textarea>
+            <br />
+            <button type="submit">Apply</button>
+            <!-- <input type="submit" name="submit" id="in-submit" />
+            <input type="reset" name="reset" id="in-reset" /> -->
+          </form>
+      </div>
+      </section>
+    <footer>
+      <p>&copy; This is all you need about your cat</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

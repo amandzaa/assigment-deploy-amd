@@ -3,18 +3,37 @@
 This website is created to make your live more colorfull with cat in your home. So don't waste your time and bring our cats home.
 But actually this Website was made to complete checkpoint assigment of first module in first week of my really amazing course. The content inspiration is based from how much I love cats.
 
+## Table of Contents
+
+- [About the Project](#about-the-project)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Setup and Installation](#setup-and-installation)
+- [Acknowledgments](#acknowledgments)
+- [🚀 About Me](#🚀-About-Me)
+
+## About the Project
+
+This project is a simple HTML and CSS website created for learning purposes. The design and layout aim to reflect clean and accessible web development practices.
+
+## Project Link
+
+Visit the live site here: [Assignment 1 - Deployed Website](https://amandzaa.github.io/assigment1-deploy-amd/)
+
 ## Features
 
-- **Home**: Give you information this website can profide.
-- **List of available cats**: Explore a wide selection of cats available for adoption, with filters for breed, age, gender, and more. Each cat has a personalized profile with photos, temperament, medical history
-- **Adoption**: Application form to adopt a cat, require you to fill your data such as your name, email, your favorite cat you will adopt, date adoption and your address.
-- **Tips**: Information about how to take a good care of your cat at home.
+- **Responsive Design**: The website adjusts to various screen sizes to ensure optimal viewing on desktops, tablets, and mobile devices.
+- **Clean Layout**: A user-friendly layout and navigation make it easy for visitors to find information.
+- **CSS Styling**: Basic CSS styling has been used to enhance the visual appeal of the webpage.
+- **GitHub Pages Deployment**: The site is deployed using GitHub Pages for easy accessibility.
 
-## Tech Stack
+## Technologies Used
 
-- **Frontend**: Html and CSS for building a responsive and good user interface.
+- **HTML5**: For structuring content.
+- **CSS3**: For styling and layout.
+- **GitHub Pages**: For deployment.
 
-## Installation
+## Setup and Installation
 
 1. Navigate to the project directory:
 
@@ -29,6 +48,12 @@ But actually this Website was made to complete checkpoint assigment of first mod
 ```
 
 3. Open it directly with double click the html file or you can open it with preview in Visual Studio Code.
+
+## Acknowledgments
+
+- Special thanks to my Team Leader and my Mentor for resources and references.
+- Created as part of a learning assignment to practice web development fundamentals.
+- Enjoy exploring the project, and feel free to reach out with any questions or suggestions!
 
 ## 🚀 About Me
 

@@ -3,94 +3,88 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cats</title>
+    <title>MeCats</title>
     <link rel="icon" href="assets/caticon.png" />
     <link rel="stylesheet" href="styles.css" />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <header class="site-header">
-      <div class="logo">
-        <img src="assets/logoX.png" alt="logo">
-        <h1>MeCats</h1>
-      </div>
-      <div class="menu-container">
-        <div class="hamburger" onclick="toggleMenu()">
-          <img src="assets/caticon.png" alt="Menu Icon">
-
-        </div>
-        <nav class="main-nav">
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Adoption</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact us</a></li>
-          </ul>
-        </nav>
-      </div>
+    <header class="site-header" >
+      <a href="#" class="logo">
+        <img src="assets/logoX.png" alt="Logo">
+        <span class="logo-caption">MeCats</span>
+      </a>
+      <nav class="navbar-links" id="navbar-links">
+        <a href="#home">Home</a>
+        <a href="#ourcat">Cat Care</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#adopt">Adoption</a>
+      </nav>
+      <nav class="main-nav">
+        <ul>
+           <li><a href="#home">Home</a></li>
+           <li><a href="#ourcat">Cat Care</a></li>
+           <li><a href="#gallery">Gallery</a></li>
+           <li><a href="#adopt">Adoption</a></li>
+        </ul>
+      </nav>
+      <span class="hamburger" id="hamburger" onclick="toggleMenu()">&#9776;</span>
     </header>
-    
-    <section class="homey-pic">
-      <div class="container">
-        <div class="slideshow-container">
-          <div class="mySlides fade">
-            <img src="assets/home1.jpg" alt="slide 1" />
-          </div>
-          <div class="mySlides fade">
-            <img src="assets/home2.jpg" alt="slide 2" />
-          </div>
-          <div class="mySlides fade">
-            <img src="assets/home3.jpg" alt="slide 3" />
-          </div>
-          <div class="mySlides fade">
-            <img src="assets/home4.jpg" alt="slide 4" />
-          </div>
-          <div style="text-align: center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-            <span class="dot" onclick="currentSlide(4)"></span>
-          </div> 
-        </div>
-        <div id="captionText" class="caption-container"></div>
+
+    <section class="adoption-section" id="home">
+      <div class="text-content">
+        <h2>Over 40 Years of Adoption Expertise in One Place</h2>
+        <p>The National Council For Adoption is the leading expert on adoption issues, providing resources and education for all people and organizations in the adoption world, and advocating for sound policies so that every cat can thrive in a nurturing, permanent family.</p>
+        <a href="#" class="learn-more">Learn More</a>
+      </div>
+      <div class="video-content">
+        <video src="assets/videocatpink.mp4" alt="Family Video" controls autoplay>
       </div>
     </section>
-
-    <section class="expertise-video">
-      <div class="ex-caption">caption</div>
-      <div class="ex-video">fame</div>
+    <section class="feature-caption" id="ourcat">
+      <h1>Healthy Cat, Happy Cat: A Comprehensive Care Guide</h1>
+      <p>Maintaining your cat's health is crucial for their longevity and happiness. Here are some suggestions to keep your feline friend in top shape:</p>
     </section>
-
     <section class="features">
       <div class="feature-box">
         <img src="assets/feature1.jpg" alt="Gallery" class="imgx" />
-        <h3>Our Gallery</h3>
-        <p>this is all you want to see everyday</p>
-        <div class="overlay"></div>
+        <h3>Provide a Safe, Comfortable Environment</h3>
+        <p>
+          <li>Cats thrive in environments that feel secure and calm. Create cozy spots where they can rest undisturbed. </li> 
+          <li>Reduce stress, as it can impact their physical health.</li>
+          <div class="overlay"></div>
       </div>
       <div class="feature-box">
         <img src="assets/feature2.jpg" alt="Cats" class="imgx" />
-        <h3>Our Cats</h3>
-        <p>this is all you want to bring to your home</p>
+        <h3>Balanced Diet</h3>
+        <p>
+          <li>Feed your cat high-quality cat food, ideally with meat as the primary ingredient, as cats are obligate carnivores. </li>
+          <li>Avoid giving them human food, especially those toxic to cats (like onions, garlic, chocolate, caffeine, alcohol, and dairy).</li>
+        </p>
         <div class="overlay"></div>
       </div>
       <div class="feature-box">
         <img src="assets/feature3.jpg" alt="Testimoni" class="imgx" />
-        <h3>Our Testimoni</h3>
-        <p>this is all you want to comment me</p>
+        <h3>Grooming and Fur Care</h3>
+        <p>
+          <li>Brush your cat regularly, especially if they have long fur, to prevent mats and reduce shedding.</li>
+          <li>This also minimizes hairballs, which can cause digestive problems.</li>  
+        </p>
         <div class="overlay"></div>
       </div>
       <div class="feature-box">
         <img src="assets/feature4.jpg" alt="Gallery" class="imgx" />
-        <h3>Our Gallery</h3>
-        <p>this is all you want to see everyday</p>
+        <h3>Watch for Behavioral Changes</h3>
+        <p>
+          <li>Cats are good at hiding pain, so monitor any changes in behavior, like hiding, aggression, excessive grooming, or changes in eating and litter habits.</li>
+        </p>
         <div class="overlay"></div>
       </div>
     </section>
 
-    <section class="gallery">
-      <h2>Our Gallery</h2>
-      <p>Its all you need to know about your cat</p>
+    <section class="gallery" id="gallery">
+      <h1>Meet the Purr-sonalities: A Celebration of Cats in Every Shape and Size</h1>
+      <p>From playful kittens to wise old toms, this gallery showcases the incredible variety of feline personalities. Get ready to fall in love with each whiskered face and see why cats are truly the kings and queens of charm.</p>
       <div class="image-gallery">
         <img
           src="assets/slide1.jpg"
@@ -149,65 +143,48 @@
         <div id="caption"></div>
       </div>
 
-      <section class="form-container">
-        <div class="header-form">
-          <h3>text</h3>
+      <section class="form-container" id="adopt">
+        <div class="form-section">
+            <h1>Adopt a Friend for Life: Start Your Journey Here</h1>
+            <p>Ready to welcome a new furry friend into your family? Complete our adoption form and take the first step towards giving a loving cat a forever home. For more information, learn more by <a href="#ourcat">clicking here</a>.</p>
+            <form action="" method="post">
+                <label for="type">Are you looking for an adult or kitten?</label>
+                <select id="type" class="input-field">
+                    <option>Adult Cat</option>
+                    <option>Kitten</option>
+                </select>
+                <label for="firm-name">Please fill your data here</label>
+                <input type="text" class="input-field" placeholder="Your Name">
+                <input type="email" class="input-field" placeholder="Your Email">
+                <textarea class="input-field" name="textarea" id="in-textarea" placeholder="Your Address"></textarea>
+                <label for="indate">Select your adoption date</label>
+                <input type="date" id="indate" class="input-field" placeholder="Date of Adoption">
+                <label for="catlist">Select your favorite cat</label>
+                <select class="input-field" id="catlist">
+                    <option>Milo</option>
+                    <option>Luna</option>
+                    <option>Whiskers</option>
+                    <option>Bella</option>
+                    <option>Oliver</option>
+                    <option>Cleo</option>
+                    <option>Simba</option>
+                    <option>Willow</option>
+                </select>
+                
+                <label class="checkbox-container">
+                    <input type="checkbox">
+                    Send express to home with love
+                </label>
+                
+                <button type="submit" class="submit-button">Submit</button>
+            </form>
         </div>
-        <div class="caption-form">
-          <p>this is vaption for form</p>
+        
+        <div class="image-section">
+            <img src="assets/formpic.png" alt="Attorney or Agency Representative">
         </div>
-        <div class="image-form">
-          <p>this is pic for form</p>
-          <img src="assets/mujair.jpg" >
-        </div>
-        <div class="div-form">
-          <form action="/submit" method="post">
-            <label for="in-name">Name</label>
-            <input
-              type="text"
-              name="Name"
-              id="in-name"
-              required
-              placeholder="your name here"
-            /><br />
-            <label for="in-email">Email</label>
-            <input
-              type="email"
-              name="Email"
-              id="in-email"
-              required
-              placeholder="your email here"
-            /><br />
-    
-            <label for="in-selectcats">Select your fav Cat</label>
-            <select name="SelectCat" id="in-selectcats">
-              <option value="Whiskers">Whiskers</option>
-              <option value="Luna">Luna</option>
-              <option value="Max">Max</option>
-              <option value="Bella">Bella</option>
-              <option value="Mittens">Mittens</option>
-              <option value="Sasha">Sasha</option>
-              <option value="Shadow">Shadow</option>
-              <option value="Gizmo">Gizmo</option>
-            </select>
-            <br />
-    
-            <label for="in-date">Date Adoption</label>
-            <input
-              type="date"
-              name="Date"
-              id="in-date"
-              placeholder="date of Adoption here"
-            /><br />
-            <label for="in-textarea">Address</label>
-            <textarea name="textarea" id="in-textarea"></textarea>
-            <br />
-            <button type="submit">Apply</button>
-            <!-- <input type="submit" name="submit" id="in-submit" />
-            <input type="reset" name="reset" id="in-reset" /> -->
-          </form>
-      </div>
       </section>
+    
     <footer>
       <p>&copy; This is all you need about your cat</p>
     </footer>

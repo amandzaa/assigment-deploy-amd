@@ -96,7 +96,7 @@ body {
 }
 
 .adoption-section {
-  background-image: url(./assets/cat-bg.png);
+  background-image: url("./assets/cat-bg.png");
   background-size: cover;
   display: grid;
   grid-template-columns: 1fr 1fr;

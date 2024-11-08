@@ -125,13 +125,13 @@ body {
   font-size: var(--text-p);
   color: var(--p-color);
   line-height: 1.6;
-  /* margin-bottom: 20px; */
 }
 
 .text-content ul li {
   font-size: var(--text-p);
   color: var(--p-color);
   line-height: 1.6;
+  text-shadow: 0.5px 0.5px 0.5px white;
 }
 
 .text-content .learn-more {
@@ -386,7 +386,6 @@ body {
 }
 
 .form-section {
-  /* min-width: 800px; */
   background-color: #ffffff;
   padding: 30px;
   border-radius: 12px 0px 0px 12px;

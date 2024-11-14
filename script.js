@@ -1,7 +1,14 @@
-function toggleMenu() {
-  const menu = document.querySelector(".main-nav");
-  menu.classList.toggle("active");
-}
+const hamburger = document.getElementById("hamburger");
+const sidebar = document.getElementById("sidebar");
+const closeButton =document.getElementById("close-sidebar");
+
+hamburger.addEventListener("click", () => {
+  sidebar.classList.remove("translate-x-full");
+})
+
+closeButton.addEventListener("click", () => {
+  sidebar.classList.add("translate-x-full");
+})
 
 let currentIndex = 0;
 const images = [
@@ -51,3 +58,21 @@ function updateModal() {
     modalImg.classList.add("show");
   }, 200);
 }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const nightMode = localStorage.getItem('nightMode');
+      if (nightMode === 'enabled') {
+          document.body.classList.add('dark-mode');
+          document.getElementById('nightModeToggle').checked = true;
+      }
+  });
+
+  function toggleNightMode() {
+      const isChecked = document.getElementById('nightModeToggle').checked;
+      document.body.classList.toggle('dark-mode', isChecked);
+      if (isChecked) {
+          localStorage.setItem('nightMode', 'enabled');
+      } else {
+          localStorage.setItem('nightMode', 'disabled');
+      }
+  }

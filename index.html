@@ -3,13 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="This is my cat adoption website">
+    <meta name="keywords" content="cat, adoption, dark mode, HTML, CSS, JavaScript, night mode, web development">
+    <meta name="author" content="Amanda">
     <title>MeCats</title>
     <link rel="icon" href="assets/caticon.png" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
     <link rel="stylesheet" href="styles.css" />
   </head>
 
@@ -29,24 +28,37 @@
         <a href="#gallery">Gallery</a>
         <a href="#adopt">Adoption</a>
       </nav>
-
-      <nav class="main-nav">
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#ourcat">Cat Care</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#adopt">Adoption</a></li>
-        </ul>
-      </nav>
+      <div class="night-mode">
+        <label class="switch">
+          <input
+          type="checkbox"
+          id="nightModeToggle"
+          onclick="toggleNightMode()"
+          />
+          <span class="slider"></span>
+        </label>
+      </div>
       <span
         class="hamburger text-[50px] pr-5 text-pink-300"
         id="hamburger"
-        onclick="toggleMenu()"
         >&#8801;</span
       >
+      <div id="sidebar" class="fixed w-[256px] right-0 h-full z-30 shadow-lg rounded-md lg:hidden p-0 translate-x-full transition-all duration-300" >
+        <div class="p-6">
+          <button id="close-sidebar" class="fixed top-5 right-10 text-2xl text-white">&times;</button>
+          <nav class="fixed top-11 right-13 pr-20 main-nav">
+            <ul class="space-y-4">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#ourcat">Cat Care</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+              <li><a href="#adopt">Adoption</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
     </header>
 
-    <section class="adoption-section bg-pink-200" id="home">
+    <section class="adoption-section" id="home">
       <div class="text-content pt-20 px-5">
         <h2>Over 40 Years of Adoption Expertise in One Place</h2>
         <p>
@@ -62,14 +74,32 @@
         </ul>
         <a href="#adopt" class="learn-more">Learn More &#8594;</a>
       </div>
-      <div class="video-content">
+      <div class="carousel-css">
+        <input type="radio" name="carousel-css" id="slide1" checked>
+        <input type="radio" name="carousel-css" id="slide2">
+        <input type="radio" name="carousel-css" id="slide3">
+        <input type="radio" name="carousel-css" id="slide4">
+        <div class="slides">
+            <div class="slide"><img src="./assets/slide9.jpg" alt="Slide 1"></div>
+            <div class="slide"><img src="./assets/slide10.jpg" alt="Slide 2"></div>
+            <div class="slide"><img src="./assets/slide12.jpg" alt="Slide 3"></div>
+            <div class="slide"><img src="./assets/slide13.jpg" alt="Slide 4"></div>
+        </div>
+        <div class="carousel-css-controls">
+            <label for="slide1"></label>
+            <label for="slide2"></label>
+            <label for="slide3"></label>
+            <label for="slide4"></label>
+        </div>
+      </div>
+      <!-- <div class="video-content">
         <video
           src="./assets/videocatpink.mp4"
           alt="Family Video"
           controls
           autoplay
         ></video>
-      </div>
+      </div> -->
     </section>
 
     <article class="flex-col">
@@ -97,7 +127,7 @@
           <h3>Balanced Diet</h3>
           <p>
             Feed your cat high-quality cat food, ideally with meat as the
-            primary ingredient, as cats are obligate carnivores.
+            primary ingredient, as cats can  be obligate carnivores.
           </p>
           <p>
             Avoid giving them human food, especially those toxic to cats (like
@@ -113,7 +143,7 @@
             prevent mats and reduce shedding.
           </p>
           <p>
-            This also minimizes hairballs, which can cause digestive problems.
+            This also minimizes hairballs, which can cause more digestive problems.
           </p>
           <div class="overlay"></div>
         </div>
@@ -250,14 +280,15 @@
 
       <div class="image-section">
         <picture class="flex">
-          <source media="(min-width:768px)" srcset="./assets/cat-form1.png" />
-          <img src="./assets/cat-form2.png" alt="abu cat" class="flex" />
+          <source media="(min-width:768px)" srcset="./assets/cat-form2.png" />
+          <img src="./assets/cat-form1.png" alt="abu cat" class="flex" />
         </picture>
       </div>
     </section>
 
     <footer>
       <p>&copy; This is all you need about your cat</p>
+      <p>Author &raquo; Amanda&trade; </p>
     </footer>
 
     <script src="script.js"></script>

@@ -36,7 +36,7 @@ body {
   background-color: #222;
   background: linear-gradient(125deg, #3e152d, #575757df);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.659);
-  padding-right: 100px;
+  padding-right: 75px;
 }
 
 .site-header a {

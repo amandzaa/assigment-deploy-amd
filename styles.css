@@ -460,7 +460,7 @@ label {
 .image-section img {
   width: 100%;
   height: auto;
-  min-width: 700px;
+  min-width: 400px;
   border-radius: 12px;
   animation: slideHover 4s infinite ease-in-out;
 }
